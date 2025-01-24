@@ -1,11 +1,16 @@
 <script lang="ts">
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
+  import thunderLogo from '/thunder.svg'
   import Counter from './lib/Counter.svelte'
+  const url = import.meta.env.VITE_BASE_URL;
 </script>
 
 <main>
   <div>
+    <a href={url} target="_blank" rel="noreferrer">
+      <img src={thunderLogo} class="logo" alt="Thunder Logo" />
+    </a>
     <a href="https://vite.dev" target="_blank" rel="noreferrer">
       <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
